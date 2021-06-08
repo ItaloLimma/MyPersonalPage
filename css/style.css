@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+body {
+    padding: 0;
+    margin: 0;
+    background: whitesmoke;
+}
+
+#interface {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid teal;
+    box-shadow: 0 2px 0 2px rgb(155, 155, 155);
+}
+
+/* Cabeçalho e menu */
+.navbar-fixed nav {
+    width: 90%;
+    background-color: teal;
+}
+
+#logo {
+    margin-left: 10px;
+}
+/* Fim cabeçalho e menu */
+
+/* Intro */
+#intro {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    margin-bottom: -3em;
+    background: url("../img/bg-img03.jpg"); background-size: cover; background-repeat: no-repeat;
+}
+
+img#foto-perfil {
+    width: 250px;
+    margin: 0;
+}
+
+#conteudo-intro {
+    text-align: justify;
+    color: rgb(100, 100, 100);
+}
+
+#container-intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10em;
+}
+/* Fim intro */
+
+/* Início conteúdo-02 */
+#conteudo-02 {
+    background-color: teal;
+    margin: 0;
+}
+
+#conteudo-02 h2 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#container-02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.certificado {
+    width: 300px;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.area-certif img{
+    width: 100%;
+    border-radius: 1em;
+}
+
+.area-certif img:hover {
+    transform: scale(1.4);
+}
+/* Fim conteúdo-02 */
+
+/* Início do conteúdo-03 */
+#conteudo-03 h2{
+    color: teal;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 1em;
+}
+
+#container-03 {
+    width: 90%;
+    display: flex;
+    margin: 0 auto 7em auto;
+    border: 1px solid teal;
+    border-radius: 1em;
+}
+
+@media screen and (max-width: 860px) {
+    #container-03 {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.coluna h3 {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(100, 100, 100);
+}
+
+.coluna p {
+    width: 100%;
+    text-align: justify;
+    color: rgb(100, 100, 100);
+}
+
+.coluna {
+    width: 100%;
+    display: grid;
+    position: relative;
+    padding: 0 1em;
+    text-align: justify;
+    border-right: 1px solid teal;
+}
+
+.coluna:last-of-type {
+    /* last-of-type -> permite retirar a ultima linha de borda da coluna */
+    border-right: none;
+}
+
+.img-coluna {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coluna figure img{
+    width: 46px;
+    margin: 4em 0;
+}
+/* Fim conteúdo-03 */
+
+/* Rodapé - conteúdo final */
+#final {
+    background-color: teal;
+    margin-bottom: -10px;
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+}
+
+#contato img {
+    width: 46px;
+    margin: 10px;
+}
+
+#contato img:hover {
+    background: white;
+    border-radius: 2em;
+}
+
+#final p {
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+/* Fim */
