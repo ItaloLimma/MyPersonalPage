@@ -7,20 +7,27 @@ body {
 }
 
 #interface {
-    width: 90%;
+    width: 90vw;
     margin: 0 auto;
     border: 1px solid teal;
     box-shadow: 0 2px 0 2px rgb(155, 155, 155);
 }
 
 /* Cabeçalho e menu */
-.navbar-fixed nav {
-    width: 90%;
+#interface .navbar-fixed nav {
+    width: 90vw;
     background-color: teal;
 }
 
 #logo {
     margin-left: 10px;
+}
+
+/* --Responsividade do MENU-- */
+@media screen and (max-width: 480px) {
+    #logo {
+        font-size: 1.5em;
+    }
 }
 /* Fim cabeçalho e menu */
 
@@ -32,21 +39,73 @@ body {
     background: url("../img/bg-img03.jpg"); background-size: cover; background-repeat: no-repeat;
 }
 
+#container-intro {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10em;
+}
+
+figure#img-intro {
+    width: 45vw;
+}
+
 img#foto-perfil {
     width: 250px;
     margin: 0;
 }
 
 #conteudo-intro {
+    width: 45vw;
     text-align: justify;
     color: rgb(100, 100, 100);
 }
 
-#container-intro {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 10em;
+/* --Responsividade do conteudo INTRO-- */
+@media screen and (max-width: 900px) and (min-width: 501px) {
+    img#foto-perfil {
+        width: 130px;
+        margin-top: -2em;
+        margin-left: -8em;
+    }
+
+    #conteudo-intro h3 {
+        margin-top: -4em;
+        padding-bottom: 4em;
+        font-size: 1.2em;
+    }
+
+    #conteudo-intro p {
+        font-size: 0.9em;
+        margin: -6em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    img#foto-perfil {
+        display: none;
+    }
+
+    #container-intro {
+        width: 100%;
+        display: block;
+        margin: 1em;
+        padding: 0;
+    }
+
+    #conteudo-intro h3{
+        font-size: 1.3em;
+        margin-top: -5em;
+        margin-bottom: 6em;
+    }
+
+    #conteudo-intro p {
+        position: absolute;
+        margin-top: -7em;
+        padding-right: 3em;
+        font-size: 0.8em;
+    }
 }
 /* Fim intro */
 
@@ -85,6 +144,23 @@ img#foto-perfil {
 .area-certif img:hover {
     transform: scale(1.4);
 }
+
+/* --Responsividade do conteudo-02-- */
+@media screen and (max-width: 900px) and (min-width: 501px) {
+    #conteudo-02 h2 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #conteudo-02 h2 {
+        font-size: 1.8em;
+    }
+
+    .certificado {
+        width: 65%;
+    }
+}
 /* Fim conteúdo-02 */
 
 /* Início do conteúdo-03 */
@@ -101,14 +177,6 @@ img#foto-perfil {
     margin: 0 auto 7em auto;
     border: 1px solid teal;
     border-radius: 1em;
-}
-
-@media screen and (max-width: 860px) {
-    #container-03 {
-        display: block;
-        width: 100%;
-        padding: 0;
-    }
 }
 
 .coluna h3 {
@@ -147,6 +215,53 @@ img#foto-perfil {
     width: 46px;
     margin: 4em 0;
 }
+
+/* --Responsividade do conteudo-03-- */
+@media screen and (max-width: 900px) and (min-width: 501px) {
+    #conteudo-03 h2 {
+        font-size: 2.5em;
+    }
+
+    #container-03 {
+        display: block;
+    }
+
+    .coluna {
+        border: none;
+        border-bottom: 1px solid teal;
+    }
+
+    .coluna:last-of-type {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #conteudo-03 h2 {
+        font-size: 1.8em;
+    }
+
+    #container-03 {
+        display: block;
+    }
+
+    .coluna {
+        border: none;
+        border-bottom: 1px solid teal;
+    }
+
+    .coluna:last-of-type {
+        border-bottom: none;
+    }
+
+    .coluna h3 {
+        font-size: 1.2em;
+    }
+
+    .coluna p {
+        font-size: 0.8em;
+    }
+}
 /* Fim conteúdo-03 */
 
 /* Rodapé - conteúdo final */
@@ -176,5 +291,18 @@ img#foto-perfil {
     font-size: 1em;
     margin: 10px;
     padding-bottom: 10px;
+}
+
+/* --Responsividade do footer-- */
+@media screen and (max-width: 900px) and (min-width: 501px) {
+    #contato img{
+        width: 36px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contato img{
+        width: 26px;
+    }
 }
 /* Fim */
